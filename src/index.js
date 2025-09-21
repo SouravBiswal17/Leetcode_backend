@@ -14,12 +14,12 @@ const cors = require('cors')
 // console.log("Hello")
 
 app.use(cors({
-    origin: "*",
-}))
+  origin: "https://leetcode-clone-umber-ten.vercel.app",
+  credentials: true
+}));
 
 app.use(express.json());
 app.use(cookieParser());
-
 app.use('/user',authRouter);
 app.use('/problem',problemRouter);
 app.use('/submission',submitRouter);
