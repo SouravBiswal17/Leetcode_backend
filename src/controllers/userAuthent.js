@@ -42,6 +42,7 @@ const register = async (req,res)=>{
 const login = async (req,res)=>{
 
     try{
+        
         const {emailId, password} = req.body;
 
         if(!emailId)
