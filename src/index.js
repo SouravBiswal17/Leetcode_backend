@@ -14,8 +14,7 @@ const cors = require('cors')
 // console.log("Hello")
 
 app.use(cors({
-    origin: 'https://leetcode-clone-umber-ten.vercel.app/',
-    credentials: true 
+    origin: "*",
 }))
 
 app.use(express.json());
