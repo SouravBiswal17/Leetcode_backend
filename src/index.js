@@ -15,8 +15,11 @@ const cors = require('cors')
 
 app.use(cors({
   origin: "https://leetcode-clone-umber-ten.vercel.app",
-  credentials: true
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // allowed methods
+allowedHeaders: ["Content-Type", "Authorization"]     // headers frontend may send
 }));
+
 
 app.use(express.json());
 app.use(cookieParser());
