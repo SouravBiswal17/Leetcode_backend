@@ -14,7 +14,7 @@ const cors = require('cors')
 // console.log("Hello")
 
 app.use(cors({
-  origin: "https://leetcode-clone-umber-ten.vercel.app/",
+  origin: "https://leetcode-clone-umber-ten.vercel.app",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // allowed methods
 allowedHeaders: ["Content-Type", "Authorization"]     // headers frontend may send
